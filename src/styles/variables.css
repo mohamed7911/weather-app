@@ -1,0 +1,18 @@
+:root {
+  --primary: #FFFFFF;
+
+  --primary-en: "Work Sans", sans-serif;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem; /*16px*/
+  --font-size-smd: 1.25rem; /*20px*/
+  --font-size-md: 1.375rem; /*22px*/
+  --font-size-lg: 1.5rem; /*24px*/
+  --font-size-llg: 1.875rem; /*30px*/
+  --font-size-xl: 2.25rem; /*36px*/
+  --font-size-2xl: 3rem; /*48px*/
+  --font-size-3xl: 4rem; /*64px*/
+  --font-size-4xl: 9rem; /*144px*/
+
+}

@@ -1,0 +1,55 @@
+.weather-container{
+	display: flex;
+	overflow-x: scroll;
+	gap: 70px;
+	position: relative;
+    border-bottom: 1px solid #FFFFFF80;
+	margin-block: 38px 35px;
+}
+
+.weather-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.weather-box .time{
+	font-size: var(--font-size-lg);
+}
+
+.weather-box .degree{
+	font-size: var(--font-size-xl);
+}
+
+
+
+.weather-box img{
+	width: 66px;
+	height: 66px;
+}
+
+
+
+.weather-container::-webkit-scrollbar {
+	width: 5px;
+	height: 3px;
+  }
+  
+  /* Track */
+  .weather-container::-webkit-scrollbar-track {
+	background: transparent;
+  }
+  
+  /* Handle */
+  .weather-container::-webkit-scrollbar-thumb {
+	background: var(--primary);
+	border-radius: 4px;
+  }
+
+
+@media(max-width:550px){
+	.weather-box .time{
+		font-size: var(--font-size-xs	);
+	}
+}

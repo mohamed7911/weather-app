@@ -1,0 +1,36 @@
+/* variables  */
+@import url(./variables.css);
+
+/* components  */
+@import url(components/index.css);
+
+body {
+  font-family: var(--primary-en);
+  overflow-x: hidden;
+  color: var(--primary);
+  background-color: var(--light-bg);
+  height: 100dvh;
+}
+
+.custom-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mid-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+@media (max-width:1200px) {
+
+  .custom-container{
+      padding-inline: 22px;
+  }
+}
+
+a {
+  text-decoration: none;
+}

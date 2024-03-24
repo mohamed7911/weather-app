@@ -1,38 +1,100 @@
 .App {
-  text-align: center;
+  background-image: url(/public/assets/Background.png);
+  min-height: 100dvh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navigation-bar{
+	justify-content: space-between;
+	padding-block: 41px 171px;
+	align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-text{
+  font-size: var(--font-size-xl);
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.middle-container{
+	display: flex;
+	justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.middle-section img{
+	width: 97px;
+	height: 97px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.middle-section h1{
+	font-size: var(--font-size-2xl);
+	font-weight: 700;
+	margin-block: 0 10px;
+}
+
+.middle-section h3{
+	font-size: var(--font-size-llg);
+	font-weight: 700;
+	margin-block: 16px 83px;
+}
+
+.middle-section h4{
+	font-size: var(--font-size-smd);
+	font-weight: 700;
+	margin-block: 0 35px;
+}
+
+.r-mid-container{
+	display: flex;
+	align-items: end;
+	flex-direction: column;
+}
+
+@media (max-width: 550px) {
+	.navigation-bar{
+		padding-block: 41px 71px;
+	}
+
+	.nav-text{
+		font-size: var(--font-size-md);
+		font-weight: 700;
+	}
+
+	.r-mid-container .degree-container{
+		font-size: var(--font-size-xl) !important;
+	}
+
+	.r-mid-container h3{
+		font-size: var(--font-size-md) !important;
+	}
+
+	.r-mid-container{
+		align-items: center;
+	}
+
+	.middle-container{
+		flex-direction: column;
+		margin-bottom: 80px;
+	}
+
+	.middle-section{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.middle-section h1{
+		margin-block: 0;
+	}
+	
+	.middle-section h3{
+		margin-block:0;
+	}
+	
+	.middle-section h4{
+
+		margin-block:0;
+	}
 }
